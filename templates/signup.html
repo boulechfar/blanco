@@ -1,0 +1,8 @@
+{% load django_bootstrap5 %}
+{% load crispy_forms_tags %}
+{{ form|crispy }}
+<form method="POST">
+    {% csrf_token %}
+    { form |as_crispy_field }
+    <input name="" id="" class="btn btn-primary" type="submit" value="signup">
+</form>
